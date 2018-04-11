@@ -2,6 +2,7 @@ var countLetters = (str) => {
   var letters = {}
   // Count the letters
   for (var char of str) {
+    if (char === ' ') continue
     // Check if char is counted already
     if (letters[char] > 0) {
       letters[char]++
